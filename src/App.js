@@ -1,18 +1,23 @@
 import React from 'react';
-import './App.css';
 import Sidebar from './Sidebar/Sidebar';
+import Feed from './Feed/Feed';
+import "./App.css";
+import Widgets from './Widgets/Widgets';
+import { Button } from '@material-ui/core'
 
 function App() {
   return (
-    //BEM naming convention
+    // BEM
     <div className="app">
-        {/* <Sidebar /> */}
-        <p>We are working on a twitter clone!!</p>
-        {/* <Feed /> */}
+      {/* Sidebar */}
+      <Sidebar />
 
-        {/* <Widgets /> */}
+      {/* Feed */}
+      <Feed />
 
-      
+      {/* Widgets */}
+      <Widgets />
+
     </div>
   );
 }
